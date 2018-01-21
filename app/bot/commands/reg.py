@@ -8,7 +8,7 @@ bot = telepot.Bot(TOKEN)
 
 
 @telegram_command('/reg')
-def login(msg):
+def reg(msg):
     token = msg['text'].split(" ")[1]
     if 'last_name' in msg['chat']:
         surname = msg['chat']['lastname']
